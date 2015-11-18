@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrc2.myapplication.AddActivity"
+    android:outlineProvider="paddedBounds"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/T1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:hint="Requestor&apos;s Name"
+        android:layout_alignEnd="@+id/LV"
+        android:background="@drawable/shadow"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+
+         />
+
+    <org.lucasr.twowayview.TwoWayView
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:id="@+id/LV"
+        android:layout_below="@+id/T3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50dp"
+
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/T2"
+        android:hint="Patient&apos;s Name"
+        android:theme="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_below="@+id/T1"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shadow"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/T2"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/radioGroup"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/R1"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:layout_marginLeft="7dp"
+
+            android:button="@drawable/dot"
+            android:layout_below="@+id/T2"
+            android:layout_alignParentStart="true" />
+
+        <Space
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/R2"
+            android:checked="false"
+            android:layout_below="@+id/radioGroup"
+            android:button="@drawable/dot"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/T3"
+        android:lines="5"
+        android:layout_alignParentStart="true"
+        android:textAlignment="gravity"
+        android:gravity="top|left"
+        android:hint="Contact Address"
+        android:background="@drawable/shadow"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingLeft="10dp"
+        android:layout_alignEnd="@+id/LV"
+        android:layout_below="@+id/radioGroup" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Mobile"
+        android:ems="10"
+        android:id="@+id/T4"
+        android:layout_below="@+id/LV"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/shadow"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingLeft="10dp"
+        android:layout_alignEnd="@+id/LV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note : Your blood request will automatically expire after 7 days"
+        android:id="@+id/Tv"
+        android:layout_below="@+id/T4"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+
+        android:textColor="#586e7b" />
+
+
+</RelativeLayout>

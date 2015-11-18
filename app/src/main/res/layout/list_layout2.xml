@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingBottom="7dp"
+
+    android:orientation="vertical"
+    android:showDividers="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        >
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/circle"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Swapnil Jindal"
+            android:id="@+id/T1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#486166"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MAX Hospital, Netaji Subash Complex, Pitampura, Delhi - 110034"
+            android:id="@+id/T2"
+            android:layout_below="@+id/T1"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignLeft="@+id/T1"
+            android:layout_alignStart="@+id/T1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Requested on : November 14, 2015"
+            android:id="@+id/T3"
+            android:layout_below="@+id/T2"
+            android:layout_alignLeft="@+id/T2"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="O+"
+            android:id="@+id/Ti"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/imageView"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:color="#000000"
+        android:background="#000000"
+        android:layout_gravity="center"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:showDividers="none">
+
+        <Button
+            android:drawableStart="@drawable/checkbox"
+            android:drawablePadding="-110sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close Request"
+            android:id="@+id/B1"
+            android:background="#ffffff"
+            android:paddingStart="125sp"
+            android:textColor="#486166"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
