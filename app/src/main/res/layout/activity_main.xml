@@ -23,7 +23,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:weightSum="3"
-        >
+        android:id="@+id/linearLayout">
 
         <Button
             android:layout_width="wrap_content"
@@ -68,4 +68,13 @@
         android:id="@+id/textView2"
         android:layout_below="@+id/textView"
         android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button4"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="81dp" />
 </RelativeLayout>
