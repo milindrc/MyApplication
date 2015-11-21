@@ -77,4 +77,12 @@
         android:layout_above="@+id/linearLayout"
         android:layout_alignStart="@+id/textView2"
         android:layout_marginBottom="81dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/radioButton"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView" />
 </RelativeLayout>
